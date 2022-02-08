@@ -1,0 +1,15 @@
+p{
+    text-align: center;
+}
+
+.topbar{
+    color: aqua;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+.topbar p{
+    top: 50px;
+}
