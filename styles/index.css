@@ -1,15 +1,24 @@
-p{
-    text-align: center;
-}
 
-.topbar{
-    color: aqua;
-    text-align: center;
-    background-color: black;
-    width: 100%;
+.item {
+    width: 200px;
     height: 200px;
+    margin: 50px auto;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #fff;
+    font-size: 3em;
 }
 
-.fab{
-font-size: 75px;
+.title{
+    font-family: 'Exo 2', sans-serif;
+    font-family: 70px;
+    width: 400px;
+    height: 100px;
+    justify-content: center;
+    position: relative;
+    padding-left: 20px;
+}
+.title #green{
+    color: green;
 }
