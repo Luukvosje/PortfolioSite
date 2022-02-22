@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/style.css">
     <script src="https://kit.fontawesome.com/d2785ef616.js" crossorigin="anonymous"></script>
     <title>PortfolioSite</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -13,38 +13,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@800&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <script src="js/javaIndex.js"></script>
     <section class="TopContainer">
-        <div class="">
-            <div class="title">
-                <h1> <span id="green">Luuk</span> de Vos</h1>
-            </div>
-
             <nav class="navbar">
-                <div class="hamburger-menu">
+              <div class="title">
+                <h1>Luuk de Vos</h1>
+              </div>
+                  <div class="hamburger-menu">
                     <div class="line line-1"></div>
                     <div class="line line-2"></div>
                     <div class="line line-3"></div>
                 </div>
-                <div class="navv">
-                  <ul class="navbar-navs">
-                    <li class="nav-items">
-                      <a class="nav-links" href="#">Home</a>
+                  <ul class="mainMenu">
+                    <li>
+                      <a class="nav-links" id="nav-link" href="#home">Home</a>
                     </li>
-                    <li class="nav-items">
-                      <a class="nav-links" href="#">Features</a>
+                    <li>
+                      <a class="nav-links" id="nav-link" href="#">Features</a>
                     </li>
-                    <li class="nav-items">
-                      <a class="nav-links" href="#">Pricing</a>
+                    <li>
+                      <a class="nav-links" id="nav-link" href="#">Pricing</a>
                     </li>
                   </ul>
-                </div>
               </nav>
-
-        </div>
     </section>
     <section class="AboutmeContainer">
         <div class="aboutmetitle">
@@ -71,10 +63,10 @@
     
     <div class="item" data-aos="slide-up">7</div>
     
-    <div class="item" data-aos="flip-up">8</div>
+    <div class="item" id="home" data-aos="flip-up">8</div>
     <div class="item" data-aos="flip-down">9</div>
     <div class="item" data-aos="flip-right">10</div>
     <div class="item" data-aos="flip-left">11</div>
-    <script src="javaIndex.js"></script>
+    <script src="js/javaIndex.js"></script>
 </body>
 </html>
