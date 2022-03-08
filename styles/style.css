@@ -32,7 +32,7 @@ body {
         rgba(232, 168, 124, 0.4), 
         var(--charcoal)
         ),
-    url('../images/background-top.png') center no-repeat;
+    url('../images/Background-top.png') center no-repeat;
     background-size: cover;
     min-height: 500px;
 }
@@ -220,6 +220,9 @@ nav .hamburger-menu{
 
 /* MobileVersion */
 @media(max-width: 800px){
+  *{
+    width: 100%;
+  }
     nav .mainMenu {
         height: 100vh;
         position: fixed;
