@@ -139,16 +139,56 @@ nav .hamburger-menu{
   height: 300px;
   border-radius: 50%;
 }
-.centercontainer h1{
+.centercontainer .titletext{
     padding: 10px;
-    text-align: center;
     border-radius: 20px;
     background-color: rgba(129, 159, 157, 0.4);
     width: 550px;
-    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     color: white;
+    overflow: hidden;
+}
+
+.text1 {
+  animation: text1;
+}
+.text2 {
+  animation: text2;
+}
+
+.text1, .text2 {
+  
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 10s;
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+  text-align: center;
+}
+
+
+@keyframes text2 {
+  0%, 50%, 100% {
+    width: 1px;
+    opacity: 0;
+  }
+  
+  60%, 90% {
+    width: 60%;
+    opacity: 1;
+  }
+}
+@keyframes text1 {
+  0%, 50%, 100% {
+    width: 1px;
+    opacity: 0;
+  }
+  10%, 40% {
+    width: 60%;
+    opacity: 1;
+  }
 }
 
 
@@ -220,7 +260,8 @@ nav .hamburger-menu{
 
 /* MobileVersion */
 @media(max-width: 800px){
-  *{
+
+  body{
     width: 100%;
   }
     nav .mainMenu {
