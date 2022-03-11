@@ -23,6 +23,7 @@ body {
 .title{
     font-family: 'Poppins', sans-serif;
     color: var(--white);
+    margin-left: 10px;
 }
 .TopContainer{
     width: 100%;
@@ -37,16 +38,17 @@ body {
     min-height: 500px;
 }
 nav{
-    background: rgba(62, 85, 54, 0.8);
-    color: #fff;
+  background-color: rgba(129, 159, 157, 0.4);
+      color: #fff;
     display: flex;
     justify-content: space-between;
-
     text-align: center;
 
 }
 .navbar{
     height: 10vh;
+    position: fixed;
+    width: 100%;
 }
 /*
 .navbar{
@@ -58,6 +60,8 @@ nav .mainMenu{
     display: inline-flex;
     list-style: none;
     margin: 0%;
+    margin-right: 10px;
+    padding: 10px;
 }
 nav .mainMenu li a{
     display: inline-flex;
@@ -114,12 +118,14 @@ nav .hamburger-menu{
 .change .line-3{
     transform: rotateZ(405deg) translate(-8px, -6px);
 }
+
+
 /*Center Image and text*/
 
 .centercontainer{
     width: 100%;
     height: auto;
-    padding-top: 10vh;
+    padding-top: 20vh;
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
