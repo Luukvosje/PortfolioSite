@@ -1,10 +1,10 @@
 
 :root{
-    --color1: #0FC0FC;
-    --color2: #7B1DAF;
-    --color3: #FF2FB9;
-    --color4: #D4FF47;
-    --color5: #1B3649;
+    --color5: #CC99C9;
+    --color3: #FF6663;
+    --color2: #FEB144;
+    --color4: #FDFD97;
+    --color1: #9EC1CF;
     --color6: #fff;
 }
 
@@ -43,7 +43,7 @@
     margin: 0 auto 0 auto;
 }
 .topcontainer img{
-    width: 500px;
+    width: 750px;
     height: 500px;
     object-fit: cover;
     background-color: var(--color5);
@@ -145,7 +145,7 @@
     margin-top: 1%;
     margin-left: 1%;
     float: left;
-    color: #D4FF47;
+    color: var(--color3);
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     text-align: left;
@@ -168,9 +168,10 @@
  
 }
 .imagewindow img{
-    width: 20%;
+    width: 70%;
     object-fit: cover;
     height: auto;
+    margin-top: 2%;
 }
 .imagewindow iframe{
     width: 800px;
