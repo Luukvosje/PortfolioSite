@@ -46,7 +46,7 @@ nav{
 
 }
 .navbar{
-    height: 10vh;
+    height: 10%;
     position: fixed;
     width: 100%;
     z-index: 20000 !important;
@@ -61,8 +61,8 @@ nav .mainMenu{
     display: inline-flex;
     list-style: none;
     margin: 0%;
-    margin-right: 10px;
-    padding: 10px;
+    margin-right: 1%;
+    padding: 1%;
 
 }
 nav .mainMenu li a{
@@ -70,7 +70,8 @@ nav .mainMenu li a{
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
-    font-size: 25px;
+    font-size: 4vh;
+    line-height: 1.5vh;
     padding-left: 5px;
     padding-right: 5px;
 
@@ -79,7 +80,8 @@ nav .mainMenu li a:hover{
     background-color: rgb(255, 94, 0);
 }
 nav .title{
-    font-size: 25px;
+  font-size: 4vh;
+  line-height: 1.5vh;
     cursor: pointer;
 }
 
@@ -127,7 +129,7 @@ nav .hamburger-menu{
 .centercontainer{
     width: 100%;
     height: auto;
-    padding-top: 20vh;
+    padding-top: 10%;
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
@@ -143,19 +145,23 @@ nav .hamburger-menu{
     display: inline-flex;
 }
 .imagecontainer img{
-  width: 300px;
-  height: 300px;
+  width: 50%;
+  height: 50%;
   border-radius: 50%;
 }
 .centercontainer .titletext{
-    padding: 10px;
+    padding: 1%;
     border-radius: 20px;
     background-color: rgba(129, 159, 157, 0.4);
-    width: 550px;
+    width: 50vh;
     margin-left: auto;
     margin-right: auto;
     color: white;
     overflow: hidden;
+}
+.titletext h1{
+  font-size: 4vh;
+  line-height: 1.5vh;
 }
 
 .text1 {
@@ -215,7 +221,7 @@ nav .hamburger-menu{
   margin-top: -35px;
   box-shadow: inset 0 0 0 1px #fff;
   border-radius: 25px;
-  bottom: 10px;
+  bottom: 1%;
 }
 .icon-scroll:before {
   content: '';
@@ -269,8 +275,9 @@ nav .hamburger-menu{
 /* MobileVersion */
 @media(max-width: 800px){
 
-  body{
+  html,body{
     width: 100%;
+    overflow-x: hidden;
   }
     nav .mainMenu {
         height: 100vh;
@@ -319,6 +326,30 @@ nav .hamburger-menu{
     .centercontainer{
         padding-top: 30vh;
     }
+    .AboutmeContainer{
+      height: 170vh !important;
+    }
+    .AboutmeContainer .left img{
+      height: 50%;
+    }
+    .AboutmeContainer .right{
+      align-items: center;
+      justify-self: center;
+    }
+    .AboutmeContainer .right p{
+      font-size: 1.3vh;
+      line-height: 1.4vh;
+    }
+    .AboutmeContainer .right h1{
+      font-size: 1.5vh;
+      line-height: 1.6vh;
+      margin-top: 1%;
+    }
+    .AboutmeContainer .right h3{
+      font-size: 1.5vh;
+      line-height: 1.6vh;
+      margin-top: 1%;
+    }
 
 }
 
@@ -334,12 +365,13 @@ nav .hamburger-menu{
 /*About me Section*/
 .AboutmeContainer{
     width: 100%;
-    height: 110vh;
+    height: 120vh;
     font-size: 20px;
     font-family: 'Exo 2', sans-serif;
     background-color: var(--charcoal);
     text-align: center;
     padding-top: 50px;
+    color: white;
     /*
     border-top: black 2px solid;
     */
@@ -347,29 +379,237 @@ nav .hamburger-menu{
 
 .AboutmeContainer .leftside{
   width: 50%;
-  height: 80vh;
+  height: 90%;
   margin-top: 50px;
   position: absolute;
   left: 0;
   
 }
-.AboutmeContainer .leftside img{
-  width: 80%;
+.AboutmeContainer .container{
+  width: 100%;
+  margin-top: 50px;
+  height: 90vh;
+}
+.AboutmeContainer .right{
+  background-color: black;
+  -webkit-box-shadow: 0px 0px 32px 5px #000000; 
+  box-shadow: 0px 0px 32px 5px #000000;
+  line-height: 3vh;
+  font-size: 2vh;
+  border-radius: 20px;
+  text-align: left;
+  padding-left: 20px;
+  display: inline;
+}
+.AboutmeContainer .left img{
+  width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.AboutmeContainer p{
+  margin: 0%;
+}
+.AboutmeContainer .rightside .skills{
+  width: 80%;
+  background-color: rgb(12, 12, 12);
+  height: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  border-radius: 10px;
+}
 
-.AboutmeContainer .rightside{
-  width: 45%;
-  height: 80vh;
-  background-color: var(--hunter-green);
-  margin-top: 50px;
+.skills li{
+  list-style: none;
+  padding: 0;
+  color: white;
+  margin: 20px 0;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.skills h3{
+  line-height: 2.1vh;
+  font-size: 2vh;
+}
+
+.skills .bar{
+  background-color: var(--charcoal);
+  display: block;
+  height: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  width: 90%;
+  box-shadow: 0 0 10px var(--charcoal);
+}
+
+.skills .bar span{
+  height: 5px;
+  float: left;
+  background-color: var(--columbia-blue);
+}
+
+.html {
+  width: 0%;
+}
+.html::after{
+  width: 80%;
+}
+
+.csharp{
+  width: 0%;
+}
+.csharp::after{
+  width: 90%;
+}
+
+.css{
+  width: 0%;
+}
+.css::after{
+  width: 70%;
+}
+
+.art{
+  width: 0%;
+}
+.art::after{
+  width: 50%;
+}
+
+.unity{
+  width: 0%;
+}
+.unity::after{
+  width: 85%;
+}
+
+.dutch{
+  width: 0%;
+}
+.dutch::after{
+  width: 95%;
+}
+.english{
+  width: 0%;
+}
+.english::after{
+  width: 65%;
+}
+
+@keyframes html {
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+@keyframes csharp{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
+}
+
+@keyframes css{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+@keyframes art{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+
+@keyframes unity{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+
+@keyframes dutch{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 95%;
+  }
+}
+
+@keyframes english{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+
+/*Portfolio galery*/
+
+.portfoliotitle{
+  font-weight: bold;
+  color: white;
+}
+.porfolioGalery{
+  background-color: var(--morning-blue);
+  font-family: 'Exo 2', sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 110vh;
+  font-size: 20px;
+  padding-top: 20px;
+  color: white;
+}
+.portfolioinformation{
+  position: relative;
+  width: 100%;
+  height: 20vh;
+}
+.porfolioGalery .leftside{
   position: absolute;
-  right: 5%;
-  -webkit-box-shadow: 0px 0px 32px 5px #3E5536; 
-  box-shadow: 0px 0px 32px 5px #3E5536;
+  left: 10%;
+  width: 30%;
+  background-color: rgb(103, 128, 126);
+  border-radius: 20px;
+  padding: 1%;
+  margin-top: 2%;
+}
+.porfolioGalery .rightside{
+  position: absolute;
+  right: 10%;
+  width: 30%;
+  background-color: rgb(103, 128, 126);
+  border-radius: 20px;
+  padding: 1%;
+  margin-top: 2%;
+}
+.portfoliocontent{
+  width: 100%;
+  height: 70vh;
+}
+
+.cards{
+  position: absolute;
+  width: 100%;
 
 }
+
 
 
 

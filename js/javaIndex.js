@@ -20,6 +20,20 @@ function show() {
         openMenu.classList.toggle("change");
     }
 }
+var html = false;
+document.body.onscroll = function() {
+	if (document.getElementById("skillview").getBoundingClientRect().bottom <= window.innerHeight && !html) {
+		document.body.onscroll = "";
+        document.getElementById("html").style.animation = "html 2s forwards";
+        document.getElementById("csharp").style.animation = "csharp 2s forwards";
+        document.getElementById("css").style.animation = "css 2s forwards";
+        document.getElementById("art").style.animation = "art 2s forwards";
+        document.getElementById("unity").style.animation = "unity 2s forwards";
+        document.getElementById("dutch").style.animation = "dutch 2s forwards";
+        document.getElementById("english").style.animation = "english 2s forwards";
+        html = true;
+	}
+}
 
 // var i = 0;
 // var wordcount = 0;

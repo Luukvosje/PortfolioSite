@@ -24,7 +24,7 @@
   </script>
   <section class="TopContainer">
     <nav class="navbar">
-      <div class="title" >
+      <div class="title">
         <h1 data-aos="fade-down" data-aos-duration="2000">Luuk de Vos</h1>
       </div>
       <div class="hamburger-menu">
@@ -32,13 +32,13 @@
         <div class="line line-2"></div>
         <div class="line line-3"></div>
       </div>
-      <ul class="mainMenu"  data-aos="fade-up" data-aos-duration="2000">
-        
+      <ul class="mainMenu" data-aos="fade-up" data-aos-duration="2000">
+
         <li>
-          <a class="nav-links" id="nav-link" href="#home">Aboutme</a>
+          <a class="nav-links" id="nav-link" href="#aboutme">Aboutme</a>
         </li>
         <li>
-          <a class="nav-links" id="nav-link" href="#">Portfolio Galery</a>
+          <a class="nav-links" id="nav-link" href="#portfoliogalery">Portfolio Galery</a>
         </li>
         <li>
           <a class="nav-links" id="nav-link" href="#">Contact me</a>
@@ -55,17 +55,64 @@
     </div>
     <div class='icon-scroll'></div>
   </section>
-  <section class="AboutmeContainer">
+  <section class="AboutmeContainer" id="aboutme">
     <div class="aboutmetitle">
-        <h1>About me</h1>
+      <h1>About me</h1>
     </div>
-    <div class="leftside">
-      <img src="/images/imageofme.jpeg" alt="self-portret">
-    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 left">
+          <img class="" src="/images/imageofme.jpeg" alt="self-portret">
+        </div>
+        <div class="col-sm-6 right">
+          <h1>English</h1>
+          <p>My name Is Luuk de Vos and I’m 17 years old. I’m following an education on SintLucas called Software
+            Development.</p>
+          <p>My skills are C#, HTML, Art, Css, python & php</p>
+          <p>In my free time i like to code and to mountainbike a little bit.</p>
+          <p> My ambition is to make a multiplayer steam game</p>
+          <br>
+          <h1>Nederlands</h1>
+          <p>Mijn Naam is Luuk de Vos en ik ben 17 jaar oud. Ik zit op het sintlucas en volg de opleiding
+            SoftwareDevelopment</p>
+          <p>Mijn skills zijn Unity, C#, HTML, Art, Css, python & php</p>
+          <p>In mijn vrije tijd vind ik het leuk om te programmeren en om een beetje te mountainbiken</p>
+          <p>Mijn ambitie is om een multiplayer steam game te maken
+          </p>
 
-    <div class="rightside">
-      <h1>English</h1>
-      <p>sekufhseiufiusehfui</p>
+          <div class="skills" id="skillview">
+            <li>
+              <h3>HTML</h3><span class="bar"><span class="html" id="html"></span></span>
+              <h3>C#</h3><span class="bar"><span class="csharp" id="csharp"></span></span>
+              <h3>CSS</h3><span class="bar"><span class="css" id="css"></span></span>
+              <h3>ART</h3><span class="bar"><span class="art" id="art"></span></span>
+              <h3>UNITY</h3><span class="bar"><span class="unity" id="unity"></span></span>
+              <h3>Dutch</h3><span class="bar"><span class="dutch" id="dutch"></span></span>
+              <h3>English</h3><span class="bar"><span class="english" id="english"></span></span>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="porfolioGalery" id="portfoliogalery">
+    <h1 class="portfoliotitle">Portfolio Galery</h1>
+    <div class="portfolioinformation">
+      <p class="leftside">Here you can see some work i made the last year</p>
+      <p class="rightside">hier kan je mijn werk van het afgelopen jaar bekijken</p>
+    </div>
+    <div class="portfoliocontent">
+      <div class="cards">
+        <div class="card" style="width: 18rem;">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
