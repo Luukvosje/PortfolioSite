@@ -51,6 +51,7 @@ nav{
     width: 100%;
     z-index: 20000 !important;
 }
+
 /*
 .navbar{
     -webkit-box-shadow: 1px 37px 38px 20px rgba(62, 85, 54, 0.66) !important; 
@@ -64,10 +65,8 @@ nav .mainMenu{
     margin-right: 1%;
     padding: 1%;
     transition: cubic-bezier(1s, 0s, 0s 1s) all ease !important;
-
 }
 nav .mainMenu li a{
-    display: inline-flex;
     text-decoration: none;
     text-transform: uppercase;
     color: #fff;
@@ -75,11 +74,17 @@ nav .mainMenu li a{
     line-height: 1.5vh;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: all 0.8s ease-in-out;
+    margin-left: 8px;
+    border-radius: 5px;
 
 }
 nav .mainMenu li a:hover{
-    background-color: rgb(255, 94, 0);
+  background-color: var(--hunter-green);
 }
+
 nav .title{
   font-size: 4vh;
   line-height: 1.5vh;
@@ -279,8 +284,6 @@ nav .hamburger-menu{
 
   html,body{
     width: 100%;
-    overflow-x: hidden;
-    
   }
     nav .mainMenu {
         height: 100vh;
@@ -293,9 +296,7 @@ nav .hamburger-menu{
         justify-content: center;
         align-items: center;
         background: #000;
-        transition: top 1s ease;
         display: flex;
-        transition: cubic-bezier(1s, 0s, 0s 1s) all ;
         transition: all 0.8s ease;
         width: 100%;
     }
@@ -303,9 +304,12 @@ nav .hamburger-menu{
       padding: 20px;
       font-size: 1.6rem;
     }
+    nav .mainMenu li{
+      padding: 20px;
+    }
     nav .mainMenu li a:hover {
         background: none;
-        color: rgb(255, 123, 0);
+        color: var(--columbia-blue);
         font-size: 1.6rem;
     }
     nav .hamburger-menu {
@@ -698,6 +702,8 @@ nav .hamburger-menu{
 .cards .card-footer{
   border: none;
 }
+
+
 
 
 

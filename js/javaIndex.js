@@ -1,12 +1,14 @@
 const mainMenu = document.querySelector('.mainMenu');
 const openMenu = document.querySelector('.hamburger-menu');
-const navbuttons = document.querySelector('.nav-links');
-
-
+const navbuttons01 = document.querySelector('.nav-links01');
+const navbuttons02 = document.querySelector('.nav-links02');
+const navbuttons03 = document.querySelector('.nav-links03');
 
 
 openMenu.addEventListener('click', show);
-navbuttons.addEventListener('click', show);
+navbuttons01.addEventListener('click', show);
+navbuttons02.addEventListener('click', show);
+navbuttons03.addEventListener('click', show);
 
 function show() {
     if (mainMenu.style.top == '0%') {

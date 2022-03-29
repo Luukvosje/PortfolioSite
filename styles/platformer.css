@@ -1,10 +1,10 @@
 
 :root{
-    --color5: #CC99C9;
-    --color3: #FF6663;
-    --color2: #FEB144;
-    --color4: #FDFD97;
-    --color1: #9EC1CF;
+    --color5: #2A4C58ff;
+    --color3: rgb(255, 255, 255);
+    --color2: rgb(0, 0, 0);
+    --color4: #E2EEF6ff;
+    --color1: #819F9Dff;
     --color6: #fff;
 }
 
@@ -28,7 +28,7 @@
     top: 0%;
     width: 100%;
     height: 100vh;
-    background-color: var(--color1);
+    background-color: var(--color5);
     color: var(--color3);
 }
 
@@ -39,8 +39,9 @@
     background-color: var(--color5);
     padding: 10px;
     border-radius: 20px;
-    width: 50vh;
     margin: 0 auto 0 auto;
+    text-align: center;
+    background-color: #3E5536ff;
 }
 .topcontainer img{
     width: 750px;
@@ -52,7 +53,7 @@
 }
 
 .topcontainer .btn{
-    background-color: var(--color5);
+    background-color: #3E5536ff;
     padding: 10px;
     border-radius: 20px;
     color: var(--color3);
@@ -62,12 +63,11 @@
     font-size: 30px;
 }
 .topcontainer .home{
-    background-color: var(--color5);
+    background-color: #3E5536ff;
     padding: 10px;
     border-radius: 20px;
     color: var(--color3);
     top: 2%;
-    position: absolute;
     width: 250px;
     font-size: 30px;
     left: 1%;
@@ -78,6 +78,13 @@
 }
 .next{
     right: 1%;
+}
+.toppp{
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
