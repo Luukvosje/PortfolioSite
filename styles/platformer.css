@@ -18,7 +18,9 @@
     padding: 0;
 }
 
-
+html{
+    background-color: var(--color5);
+}
 
 .topcontainer{
     position: absolute;
@@ -42,6 +44,12 @@
     margin: 0 auto 0 auto;
     text-align: center;
     background-color: #3E5536ff;
+    
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 100px;
 }
 .topcontainer img{
     width: 750px;
@@ -53,25 +61,36 @@
 }
 
 .topcontainer .btn{
-    background-color: #3E5536ff;
+
     padding: 10px;
     border-radius: 20px;
     color: var(--color3);
     bottom: 2%;
-    position: absolute;
+    position: relative;
     width: 250px;
     font-size: 30px;
+    
+    transition: all 0.8s;
+}
+.topcontainer .btn:hover{
+    background-color: #3E5536ff;
+    margin: 10px 30px 10px 30px;
 }
 .topcontainer .home{
-    background-color: #3E5536ff;
-    padding: 10px;
-    border-radius: 20px;
+
+    padding: 10px;  
     color: var(--color3);
     top: 2%;
     width: 250px;
     font-size: 30px;
     left: 1%;
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+}
+.topcontainer .home:hover{
+    background-color: #3E5536ff;
 }
 .back{
     left: 1%;
@@ -80,34 +99,17 @@
     right: 1%;
 }
 .toppp{
-    position: fixed;
+    width: 500px;
     text-align: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
-.half-circle {
-    width: 150px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    background-color: var(--color5);
-    z-index: 10;
-    border-top-left-radius: 110px;
-    border-top-right-radius: 110px;
-    border: 10px solid var(--color5);
-    border-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-    transition: all 0.8s;
-    transition-timing-function: cubic-bezier(0.1, 0.5, 0.5, 0.1);
-    color: white;
-}
+
 .line{
     position: absolute;
     border-bottom: 15px solid var(--color5);
@@ -125,30 +127,16 @@
 .half-circle:hover{
     color: var(--color3) !important;
 }
-
-.contentcontainer{
-    background-color: #1B3649;
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 250%;
-    transition: all 1s;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.5, 0.1);
-    justify-content: center;
-    text-align: center;
-}
 .window{
-    height: 85vh;
     background-color: var(--color5);
     width: 100%;
-    overflow: scroll;
-    overflow-x: hidden;
     margin-top: 5%;
+    height: 100%;
+    position: relative;
 }
 .textwindow{
     width: 50%;
     background-color:var(--color2);
-    height: 125vh;
     margin-top: 1%;
     margin-left: 1%;
     float: left;
