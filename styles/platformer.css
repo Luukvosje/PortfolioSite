@@ -1,4 +1,5 @@
 
+
 :root{
     --color5: #2A4C58ff;
     --color3: rgb(255, 255, 255);
@@ -50,6 +51,7 @@ html{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 100px;
+    width: 500px;
 }
 .topcontainer img{
     width: 750px;
@@ -99,15 +101,19 @@ html{
     right: 1%;
 }
 .toppp{
-    width: 500px;
+    width: 100%;
     text-align: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    position: fixed;
+    padding: 10px;
+    background-color: var(--color5);
+    z-index: 2000;
 }
-
+.buttons{
+    margin-top: 200px;
+}
 
 
 .line{
@@ -137,8 +143,8 @@ html{
 .textwindow{
     width: 50%;
     background-color:var(--color2);
-    margin-top: 1%;
-    margin-left: 1%;
+    -webkit-box-shadow: 0px 0px 32px 5px #000000; 
+    box-shadow: 0px 0px 32px 5px #000000;
     float: left;
     color: var(--color3);
     font-size: 25px;
@@ -176,3 +182,33 @@ html{
 h3{
     font-size: 200px;
 }
+
+/* MobileVersion */
+@media(max-width: 800px){
+    html{
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+    .imagewindow{
+        float: none !important;
+        position: relative;
+        width: 100% !important;
+    }
+    .textwindow{
+        float: none !important;
+        width: 100% !important;
+    }
+    img{
+        width: 100% !important;
+        height: 75% !important;
+    }
+    .topcontainer h1{
+        width: 50% !important;
+        font-size: 20px !important;
+    }
+    .window{
+        position: relative !important;
+    }
+}
+
+

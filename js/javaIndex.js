@@ -13,7 +13,7 @@ navbuttons03.addEventListener('click', show);
 function show() {
     if (mainMenu.style.top == '0%') {
         openMenu.classList.remove("change");
-        mainMenu.style.top = '-100%';
+        mainMenu.style.top = '-150%';
         openMenu.style.posistion = "relative";
     }
     else {

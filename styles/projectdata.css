@@ -1,10 +1,11 @@
 
+
 :root{
-    --color1: #5643fd;
-    --color2: #0c164f;
-    --color3: #b72eda;
-    --color4: #7649fe;
-    --color5: #1d1135;
+    --color5: #2A4C58ff;
+    --color3: rgb(255, 255, 255);
+    --color2: rgb(0, 0, 0);
+    --color4: #E2EEF6ff;
+    --color1: #819F9Dff;
     --color6: #fff;
 }
 
@@ -18,7 +19,9 @@
     padding: 0;
 }
 
-
+html{
+    background-color: var(--color5);
+}
 
 .topcontainer{
     position: absolute;
@@ -28,7 +31,7 @@
     top: 0%;
     width: 100%;
     height: 100vh;
-    background-color: var(--color1);
+    background-color: var(--color5);
     color: var(--color3);
 }
 
@@ -39,11 +42,19 @@
     background-color: var(--color5);
     padding: 10px;
     border-radius: 20px;
-    width: 50vh;
     margin: 0 auto 0 auto;
+    text-align: center;
+    background-color: #3E5536ff;
+    
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 100px;
+    width: 500px;
 }
 .topcontainer img{
-    width: 500px;
+    width: 750px;
     height: 500px;
     object-fit: cover;
     background-color: var(--color5);
@@ -52,26 +63,36 @@
 }
 
 .topcontainer .btn{
-    background-color: var(--color5);
+
     padding: 10px;
     border-radius: 20px;
     color: var(--color3);
     bottom: 2%;
-    position: absolute;
+    position: relative;
     width: 250px;
     font-size: 30px;
+    
+    transition: all 0.8s;
+}
+.topcontainer .btn:hover{
+    background-color: #3E5536ff;
+    margin: 10px 30px 10px 30px;
 }
 .topcontainer .home{
-    background-color: var(--color5);
-    padding: 10px;
-    border-radius: 20px;
+
+    padding: 10px;  
     color: var(--color3);
     top: 2%;
-    position: absolute;
     width: 250px;
     font-size: 30px;
     left: 1%;
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+}
+.topcontainer .home:hover{
+    background-color: #3E5536ff;
 }
 .back{
     left: 1%;
@@ -79,27 +100,22 @@
 .next{
     right: 1%;
 }
-
-.half-circle {
-    width: 150px;
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    background-color: var(--color5);
-    z-index: 10;
-    border-top-left-radius: 110px;
-    border-top-right-radius: 110px;
-    border: 10px solid var(--color5);
-    border-bottom: 0;
+.toppp{
+    width: 100%;
+    text-align: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
-    cursor: pointer;
-    transition: all 0.8s;
-    transition-timing-function: cubic-bezier(0.1, 0.5, 0.5, 0.1);
-    color: white;
+    position: fixed;
+    padding: 10px;
+    background-color: var(--color5);
+    z-index: 2000;
 }
+.buttons{
+    margin-top: 200px;
+}
+
+
 .line{
     position: absolute;
     border-bottom: 15px solid var(--color5);
@@ -117,34 +133,20 @@
 .half-circle:hover{
     color: var(--color3) !important;
 }
-
-.contentcontainer{
-    background-color: var(--color5);
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 250%;
-    transition: all 1s;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.5, 0.1);
-    justify-content: center;
-    text-align: center;
-}
 .window{
-    height: 85vh;
     background-color: var(--color5);
     width: 100%;
-    overflow: scroll;
-    overflow-x: hidden;
     margin-top: 5%;
+    height: 100%;
+    position: relative;
 }
 .textwindow{
     width: 50%;
     background-color:var(--color2);
-    height: 130vh;
-    margin-top: 1%;
-    margin-left: 1%;
+    -webkit-box-shadow: 0px 0px 32px 5px #000000; 
+    box-shadow: 0px 0px 32px 5px #000000;
     float: left;
-    color: var(--color4);
+    color: var(--color3);
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     text-align: left;
@@ -167,9 +169,10 @@
  
 }
 .imagewindow img{
-    width: 80%;
+    width: 70%;
     object-fit: cover;
     height: auto;
+    margin-top: 2%;
 }
 .imagewindow iframe{
     width: 800px;
@@ -179,3 +182,33 @@
 h3{
     font-size: 200px;
 }
+
+/* MobileVersion */
+@media(max-width: 800px){
+    html{
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+    .imagewindow{
+        float: none !important;
+        position: relative;
+        width: 100% !important;
+    }
+    .textwindow{
+        float: none !important;
+        width: 100% !important;
+    }
+    img{
+        width: 100% !important;
+        height: 75% !important;
+    }
+    .topcontainer h1{
+        width: 50% !important;
+        font-size: 20px !important;
+    }
+    .window{
+        position: relative !important;
+    }
+}
+
+
