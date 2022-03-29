@@ -16,8 +16,8 @@
 ul{
     padding:0;
 }
-body {
-    overflow-x: hidden;
+html body {
+  overflow-x: hidden !important;
 }
 
 .title{
@@ -43,13 +43,13 @@ nav{
     display: flex;
     justify-content: space-between;
     text-align: center;
-
 }
 .navbar{
     height: 10%;
     position: fixed;
     width: 100%;
     z-index: 20000 !important;
+    overflow-x: hidden !important;
 }
 
 /*
@@ -284,7 +284,8 @@ nav .hamburger-menu{
 
   html,body{
     width: 100%;
-  }
+    overflow-x: hidden;
+      }
     nav .mainMenu {
         height: 100vh;
         position: fixed;
