@@ -668,7 +668,6 @@ nav .hamburger-menu {
 }
 
 .porfolioGalery .col {
-    width: 30%;
     background-color: rgb(103, 128, 126);
     border-radius: 20px;
     padding: 1%;
@@ -688,8 +687,8 @@ nav .hamburger-menu {
 }
 
 .cards .col {
-    width: 300px;
-    height: 100%;
+    width: 300px !important;
+    height: 335px !important;
     border: none;
     align-items: center;
     position: relative;
@@ -704,8 +703,8 @@ nav .hamburger-menu {
 }
 
 .cards .col .card {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     background-color: rgb(103, 128, 126);
     border: none;
     transition: all 0.8s ease-in-out;
@@ -713,13 +712,14 @@ nav .hamburger-menu {
 }
 
 .card-img-top {
-    width: 250px !important;
-    height: 250px !important;
+    width: 225px !important;
+    height: 225px !important;
     object-fit: contain;
 }
 
 .col {
     transition: all 0.5s ease-in-out;
+    flex: none;
 }
 
 .col:hover {
