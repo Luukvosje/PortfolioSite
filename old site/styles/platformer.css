@@ -1,0 +1,214 @@
+
+
+:root{
+    --color5: #2A4C58ff;
+    --color3: rgb(255, 255, 255);
+    --color2: rgb(0, 0, 0);
+    --color4: #E2EEF6ff;
+    --color1: #819F9Dff;
+    --color6: #fff;
+}
+
+@font-face {
+    font-family: mainFont;
+    src: url(/images/ProjectArcade/Thunderstorm.otf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--color5);
+}
+
+.topcontainer{
+    position: absolute;
+    font-family: 'Cantarell', sans-serif;
+    text-align: center;
+    align-items: center;
+    top: 0%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color5);
+    color: var(--color3);
+}
+
+
+.topcontainer h1{
+    font-size: 50px;
+    font-weight: 10;
+    background-color: var(--color5);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    background-color: #3E5536ff;
+    
+}
+.title{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 100px;
+    width: 500px;
+}
+.topcontainer img{
+    width: 750px;
+    height: 500px;
+    object-fit: cover;
+    background-color: var(--color5);
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.topcontainer .btn{
+
+    padding: 10px;
+    border-radius: 20px;
+    color: var(--color3);
+    bottom: 2%;
+    position: relative;
+    width: 250px;
+    font-size: 30px;
+    
+    transition: all 0.8s;
+}
+.topcontainer .btn:hover{
+    background-color: #3E5536ff;
+    margin: 10px 30px 10px 30px;
+}
+.topcontainer .home{
+
+    padding: 10px;  
+    color: var(--color3);
+    top: 2%;
+    width: 250px;
+    font-size: 30px;
+    left: 1%;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: all 0.8s;
+}
+.topcontainer .home:hover{
+    background-color: #3E5536ff;
+}
+.back{
+    left: 1%;
+}
+.next{
+    right: 1%;
+}
+.toppp{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    padding: 10px;
+    background-color: var(--color5);
+    z-index: 2000;
+}
+.buttons{
+    margin-top: 200px;
+}
+
+
+.line{
+    position: absolute;
+    border-bottom: 15px solid var(--color5);
+    width: 100%;
+    bottom: 0;
+}
+
+.half-circle p{
+    align-items: center;
+
+    justify-content: center;
+    margin-top: 25%;
+
+}
+.half-circle:hover{
+    color: var(--color3) !important;
+}
+.window{
+    background-color: var(--color5);
+    width: 100%;
+    margin-top: 5%;
+    height: 100%;
+    position: relative;
+}
+.textwindow{
+    width: 50%;
+    background-color:var(--color2);
+    -webkit-box-shadow: 0px 0px 32px 5px #000000; 
+    box-shadow: 0px 0px 32px 5px #000000;
+    float: left;
+    color: var(--color3);
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    padding: 10px;
+}
+.textwindow h1{
+    text-align: center;
+    font-weight: bold;
+}
+.imagewindow{
+    float: left;
+    width: 45%;
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+ 
+}
+.imagewindow img{
+    width: 70%;
+    object-fit: cover;
+    height: auto;
+    margin-top: 2%;
+}
+.imagewindow iframe{
+    width: 800px;
+    height: 600px;
+}
+
+h3{
+    font-size: 200px;
+}
+
+/* MobileVersion */
+@media(max-width: 800px){
+    html{
+        overflow-x: hidden !important;
+        width: 100%;
+    }
+    .imagewindow{
+        float: none !important;
+        position: relative;
+        width: 100% !important;
+    }
+    .textwindow{
+        float: none !important;
+        width: 100% !important;
+    }
+    img{
+        width: 100% !important;
+        height: 75% !important;
+    }
+    .topcontainer h1{
+        width: 50% !important;
+        font-size: 20px !important;
+    }
+    .window{
+        position: relative !important;
+    }
+}
+
+
