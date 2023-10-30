@@ -1,17 +1,43 @@
 
 
 :root{
-    --color5: #2A4C58ff;
-    --color3: rgb(255, 255, 255);
-    --color2: rgb(0, 0, 0);
-    --color4: #E2EEF6ff;
-    --color1: #819F9Dff;
-    --color6: #fff;
+    --color1: #D662EB;
+    --color2: rgb(255, 255, 255);
+    --color3: #D662EB;
+    --color4: #0c0c0c;
+
+
+
+
 }
 
-@font-face {
-    font-family: mainFont;
-    src: url(/images/ProjectArcade/Thunderstorm.otf);
+@font-face{
+    font-family:'Montserrat';
+    src:url("fonts/Montserrat-Black.eot");
+    src:local("☺"),url("fonts/Montserrat-Black.woff") format("woff"),url("fonts/Montserrat-Black.ttf") format("truetype"),url("fonts/Montserrat-Black.svg") format("svg");
+    font-weight:900;
+    font-style:normal
+}
+@font-face{
+    font-family:'Montserrat';
+    src:url("fonts/Montserrat-Bold.eot");
+    src:local("☺"),url("fonts/Montserrat-Bold.woff") format("woff"),url("fonts/Montserrat-Bold.ttf") format("truetype"),url("fonts/Montserrat-Bold.svg") format("svg");
+    font-weight:700;
+    font-style:normal
+}
+@font-face{
+    font-family:'Montserrat';
+    src:url("fonts/Montserrat-Regular.eot");
+    src:local("☺"),url("fonts/Montserrat-Regular.woff") format("woff"),url("fonts/Montserrat-Regular.ttf") format("truetype"),url("fonts/Montserrat-Regular.svg") format("svg");
+    font-weight:400;
+    font-style:normal
+}
+@font-face{
+    font-family:'Montserrat';
+    src:url("fonts/Montserrat-Light.eot");
+    src:local("☺"),url("fonts/Montserrat-Light.woff") format("woff"),url("fonts/Montserrat-Light.ttf") format("truetype"),url("fonts/Montserrat-Light.svg") format("svg");
+    font-weight:300;
+    font-style:normal
 }
 
 *{
@@ -20,38 +46,42 @@
 }
 
 html{
-    background-color: var(--color5);
+    background-color: var(--color4);
+    font-family:sans-serif !important;
+
+    -ms-text-size-adjust:100%;
+    -webkit-text-size-adjust:100%
 }
 
 .topcontainer{
     position: absolute;
-    font-family: 'Cantarell', sans-serif;
+    font-family:monospace, monospace;
+    font-weight: 900;
     text-align: center;
     align-items: center;
     top: 0%;
     width: 100%;
     height: 100vh;
-    background-color: var(--color5);
-    color: var(--color3);
+    background-color: var(--color4);
+    color: var(--color2) !important;
 }
 
 
 .topcontainer h1{
     font-size: 50px;
-    font-weight: 10;
-    background-color: var(--color5);
     padding: 10px;
     border-radius: 20px;
     margin: 0 auto 0 auto;
     text-align: center;
-    background-color: #3E5536ff;
-    
+    background-color: var(--color3);
+    color: var(--color2) !important;
 }
 .title{
     margin-top: 10px;
     margin-bottom: 10px;
     padding: 100px;
     width: 500px;
+    font-weight: 900;
 }
 .topcontainer img{
     width: 750px;
@@ -66,7 +96,9 @@ html{
 
     padding: 10px;
     border-radius: 20px;
-    color: var(--color3);
+    color: var(--color2);
+    margin-left: 5%;
+    margin-right: 5%;
     bottom: 2%;
     position: relative;
     width: 250px;
@@ -75,13 +107,13 @@ html{
     transition: all 0.8s;
 }
 .topcontainer .btn:hover{
-    background-color: #3E5536ff;
+    background-color: var(--color1);
     margin: 10px 30px 10px 30px;
 }
 .topcontainer .home{
 
     padding: 10px;  
-    color: var(--color3);
+    color: var(--color2);
     top: 2%;
     width: 250px;
     font-size: 30px;
@@ -91,15 +123,9 @@ html{
     margin-bottom: 10px;
     transition: all 0.8s;
 }
-.topcontainer .home:hover{
-    background-color: #3E5536ff;
-}
+
 .back{
     left: 1%;
-}
-.images img{
-    height: 600px;
-    width: 600px;
 }
 .next{
     right: 1%;
@@ -112,7 +138,7 @@ html{
     margin-right: auto;
     position: fixed;
     padding: 10px;
-    background-color: var(--color5);
+    background-color: var(--color4);
     z-index: 2000;
 }
 .buttons{
@@ -135,7 +161,7 @@ html{
 
 }
 .half-circle:hover{
-    color: var(--color3) !important;
+    color: var(--color6) !important;
 }
 .window{
     background-color: var(--color5);
@@ -146,19 +172,27 @@ html{
 }
 .textwindow{
     width: 50%;
-    background-color:var(--color2);
+    background-color:var(--color6);
     -webkit-box-shadow: 0px 0px 32px 5px #000000; 
     box-shadow: 0px 0px 32px 5px #000000;
     float: left;
-    color: var(--color3);
+    color: var(--color6);
     font-size: 25px;
     font-family: 'Quicksand', sans-serif;
     text-align: left;
     padding: 10px;
 }
+.textwindow p{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+}
 .textwindow h1{
     text-align: center;
     font-weight: bold;
+    font-weight: 900;
+    width: 50%;
+    font-size: 100%;
 }
 .imagewindow{
     float: left;
